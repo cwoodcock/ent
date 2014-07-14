@@ -21,6 +21,7 @@
 	For additional information and the latest version,
 	see http://www.fourmilab.ch/random/
 
+        Forked by NetSrv Consulting Ltd in 2014.
 */
 
 #include <stdio.h>
