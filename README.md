@@ -18,6 +18,7 @@ The columns are as follows:
 
 ## Author 
 John Walker, http://www.fourmilab.ch
+Contribution by Colin Woodcock, http://www.netsrv-consulting.com
 
 ## License
 This software is in the public domain.
