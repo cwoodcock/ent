@@ -206,15 +206,16 @@ int main(int argc, char *argv[])
 
 	rt_end(&ent, &chisq, &mean, &montepi, &scc);
 
-	if (terse) {
-           printf("1,%ld,%f,%f,%f,%f,%f\n",
-	      totalc, ent, chisq, mean, montepi, scc);
-	}
-
 	/* Calculate probability of observed distribution occurring from
 	   the results of the Chi-Square test */
 
     	chip = pochisq(chisq, (binary ? 1 : 255));
+
+	if (terse) {
+           /* Count,Entropy,Chi-square,Chi-probability,Mean,Monte-Carlo-Pi,Serial-Correlation*/
+           printf("%ld,%f,%f,%f,%f,%f,%f\n",
+	      totalc, ent, chisq, chip, mean, montepi, scc);
+	}
 
 	/* Print bin counts if requested */
 

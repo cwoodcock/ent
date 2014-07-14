@@ -9,6 +9,13 @@ This is a fork of the upstream code and modifies the terse output to include pro
 ## Usage
 See http://www.fourmilab.ch/random/ for more information.
 
+### Terse Mode Ouput
+In order to allow for sequential testing using the same output file, terse mode no longer prints a header row.  Additionally Chi Squared probability has been added to the ouput.
+
+The columns are as follows:
+
+`Count,Entropy,Chi-square,Chi-probability,Mean,Monte-Carlo-Pi,Serial-Correlation`
+
 ## Author 
 John Walker, http://www.fourmilab.ch
 
