@@ -207,8 +207,6 @@ int main(int argc, char *argv[])
 	rt_end(&ent, &chisq, &mean, &montepi, &scc);
 
 	if (terse) {
-           printf("0,File-%ss,Entropy,Chi-square,Mean,Monte-Carlo-Pi,Serial-Correlation\n",
-              binary ? "bit" : "byte");
            printf("1,%ld,%f,%f,%f,%f,%f\n",
 	      totalc, ent, chisq, mean, montepi, scc);
 	}
